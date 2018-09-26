@@ -1,0 +1,83 @@
+extends pug/base
+
+append vars
+	//- ...
+
+block content
+	//- ...
+	.wrapper
+		.container
+			.col-md-12
+				form(action="").user-form
+					.user-data
+						.row
+							.col-sm-4.col-md-3
+								.user-data__photo
+									img(src="images/user-photo.png")
+							.col-sm-8.col-md-9
+								.user-data__fields
+									.form-group.user-data__field-group
+										input(type="text" id="user-name").form-control.user-data__field.text-uppercase
+										label(for="user-name").user-data__label.text-uppercase Имя
+									.form-group.user-data__field-group
+										input(type="text" id="user-date").form-control.user-data__field.text-uppercase
+										label(for="user-date").user-data__label.text-uppercase Дата рождения
+									.form-group.user-data__field-group
+										input(type="text" id="user-city").form-control.user-data__field.text-uppercase
+										label(for="user-city").user-data__label.text-uppercase Город
+									.form-group.user-data__field-group
+										input(type="text" id="user-contacts").form-control.user-data__field.text-uppercase
+										label(for="user-contacts").user-data__label.text-uppercase Контактные данные
+									img(src="images/approved.png").user-data__approved
+					.user-skills
+						h2.title Навыки
+						.row
+							.col-6.col-md-3
+								label(for="html").user-skills__item
+									input(type="checkbox"  id="html").user-skills__checkbox
+									span.user-skills__name.text-uppercase html
+								label(for="css").user-skills__item
+									input(type="checkbox" id="css").user-skills__checkbox
+									span.user-skills__name.text-uppercase css3
+								label(for="bem").user-skills__item
+									input(type="checkbox" id="bem").user-skills__checkbox
+									span.user-skills__name.text-uppercase бэм
+							.col-6.col-md-3
+								label(for="sass").user-skills__item
+									input(type="checkbox" id="sass").user-skills__checkbox
+									span.user-skills__name.text-uppercase SASS
+								label(for="less").user-skills__item
+									input(type="checkbox" id="less").user-skills__checkbox
+									span.user-skills__name.text-uppercase LESS
+								label(for="gulp").user-skills__item
+									input(type="checkbox" id="gulp").user-skills__checkbox
+									span.user-skills__name.text-uppercase gULP
+							.col-6.col-md-3
+								label(for="vanilla").user-skills__item
+									input(type="checkbox" id="vanilla").user-skills__checkbox
+									span.user-skills__name.text-uppercase vANILLAJS
+								label(for="angular").user-skills__item
+									input(type="checkbox" id="angular").user-skills__checkbox
+									span.user-skills__name.text-uppercase aNGULAR
+								label(for="jquery").user-skills__item
+									input(type="checkbox" id="jquery").user-skills__checkbox
+									span.user-skills__name.text-uppercase JQUERY
+							.col-6.col-md-3
+								label(for="git").user-skills__item
+									input(type="checkbox" id="git").user-skills__checkbox
+									span.user-skills__name.text-uppercase GIT
+								label(for="foundation").user-skills__item
+									input(type="checkbox" id="foundation").user-skills__checkbox
+									span.user-skills__name.text-uppercase fOUNDATION
+								label(for="bootstrap").user-skills__item
+									input(type="checkbox" id="bootstrap").user-skills__checkbox
+									span.user-skills__name.text-uppercase BOOTSTRAP
+					.js-skills
+						.row
+							.col-12.col-sm-6
+								.js-skills__indicator
+									img(src="images/scale.png").js-skills__scale
+									img(src="images/scale-arrow.png").js-skills__arrow
+							.col-12.col-sm-6
+								h2.title Мой уровень владения <br/>Java Script
+								p.js-skills__rate 0

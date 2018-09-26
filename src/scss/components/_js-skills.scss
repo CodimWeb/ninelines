@@ -1,0 +1,51 @@
+.js-skills {
+    padding-top: 51px;
+    padding-bottom: 60px;
+    background: url(../images/bg.jpg) no-repeat center /cover;
+
+    &__indicator {
+        position: relative;
+        width: 100%;
+        max-width: 250px;
+
+        @media (max-width: 575px) {
+            margin-bottom: 20px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    &__scale {
+        display: block;
+    }
+
+    &__arrow {
+        position: absolute;
+        left: 50%;
+        bottom: 3px;
+        transform: translateX(-50%) rotate(70deg);
+        transform-origin: 50% 90%;
+        animation: move-arrow 3s linear;
+    }
+
+    &__rate {
+        font-size: 50px;
+        color: #0093d7;
+        margin: 0;
+        font-weight: 700;
+
+        @media (max-width: 575px) {
+            text-align: center;
+            margin-top: -10px;
+        }
+    }
+}
+
+@keyframes move-arrow {
+    from {
+      transform: translateX(-50%) rotate(-90deg);
+    }
+    to {
+      transform: translateX(-50%) rotate(70deg);
+    }
+}

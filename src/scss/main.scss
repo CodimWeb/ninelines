@@ -1,0 +1,23 @@
+// stylelint-disable at-rule-empty-line-before
+
+//foundation not work wtf?
+// @import "../../node_modules/foundation-sites/scss/_global";
+// @import "../../node_modules/foundation-sites/scss/foundation";
+
+// it works
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+//main styles
+@import "variables";
+@import "functions";
+@import "mixins";
+@import "sprites";
+@import "fonts";
+@import "vendor";
+@import "base";
+@import "reset-bootstrap";
+
+//layouts
+@import "components/_user-data";
+@import "components/_user-skills";
+@import "components/_js-skills";

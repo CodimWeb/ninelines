@@ -1,0 +1,17 @@
+.container {
+    width: 100%;
+    max-width: 660px;
+    padding: 0 10px;
+}
+
+.row {
+    margin: 0 -10px;
+
+    &--reset-margin {
+        margin: 0;
+    }
+}
+
+[class*="col"] {
+    padding: 0 10px;
+}

@@ -1,0 +1,72 @@
+.user-data {
+    background: url(../images/bg.jpg) no-repeat center /cover;
+    border-bottom: 1px solid #f0f0f0;
+    margin: 0 -20px;
+    padding: 30px 20px 8px;
+
+    &__fields {
+        margin-top: -8px;
+        position: relative;
+
+        @media (max-width: 320px) {
+            margin-top: 10px;
+        }
+    }
+
+    &__field-group {
+        position: relative;
+        margin-bottom: 25px;
+    }
+
+    &__photo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    &__field {
+        border: none;
+        border-bottom: 2px solid #333;
+        height: 30px;
+        font-size: 12px;
+        color: $text-color-gray;
+        border-radius: 0;
+        padding: 0 8px;
+        font-weight: 500;
+
+        &:focus {
+            box-shadow: none;
+            border-color: #333;
+        }
+    }
+
+    &__label {
+        font-size: 12px;
+        color: $text-color-gray;
+        position: absolute;
+        left: 0;
+        bottom: 7px;
+        margin: 0;
+        transition: 0.3s ease-in-out;
+        cursor: text;
+
+        &.is-active {
+            font-size: 10px;
+            bottom: 100%;
+        }
+    }
+
+    &__approved {
+        position: absolute;
+        bottom: -21px;
+        right: -17px;
+        pointer-events: none;
+
+        @media (max-width: 767px) {
+            max-width: 150px;
+        }
+    }
+}
